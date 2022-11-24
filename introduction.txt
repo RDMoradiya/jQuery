@@ -1,0 +1,140 @@
+
+*************What is jQuery?***********
+-->  jQuery is a lightweight, "write less, do more", JavaScript library.
+
+--> The purpose of jQuery is to make it much easier to use JavaScript on your website.
+
+--> jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+--> jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+
+--------------------------------------------------------------------------------------
+
+****The jQuery library contains the following features:-********
+
+--> HTML/DOM manipulation
+--> CSS manipulation
+--> HTML event methods
+--> Effects and animations
+--> AJAX
+--> Utilities
+
+Tip: In addition, jQuery has plugins for almost any task out there.
+
+-------------------------------------------------------------------------------------------
+
+***********Why jQuery?**********
+--> There are lots of other JavaScript libraries out there, but jQuery is probably the most popular, and also the most extendable.
+
+------------------------------------------------------------------------------------------
+
+*****Many of the biggest companies on the Web use jQuery, such as:-*********
+
+Google
+Microsoft
+IBM
+Netflix
+
+-------------------------------------------------------------------------------------------------
+
+**********Adding jQuery to Your Web Pages***********
+--> There are several ways to start using jQuery on your web site. You can:
+
+1. --> Download the jQuery library from jQuery.com
+2. --> Include jQuery from a CDN(Content Delivery Network), like Google
+
+----------------------------------------------------------------------------------------------------
+
+****Downloading jQuery*********
+--> There are two versions of jQuery available for downloading:
+
+1. --> Production version - this is for your live website because it has been minified and compressed
+2. --> Development version - this is for testing and development (uncompressed and readable code)
+
+--------------------------------------------------------------------------------
+
+The jQuery library is a single JavaScript file, and you reference it with the HTML <script> tag (notice that the <script> tag should be inside the <head> section)
+
+--------------------------------------------------------------------------------
+
+*******latest jQuery CDN:-***********
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+--------------------------------------------------------------------------------
+
+******************jQuery Syntax*******************
+--> The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+
+--> Basic syntax is: $(selector).action()
+
+1. --> A $ sign to define/access jQuery
+2. --> A (selector) to "query (or find)" HTML elements
+3. --> A jQuery action() to be performed on the element(s)
+
+--> Examples:
+
+1. --> $(this).hide()       --> hides the current element.
+
+2. --> $("p").hide()        --> hides all <p> elements.
+
+3. --> $(".test").hide()    --> hides all elements with class="test".
+
+4. --> $("#test").hide()    --> hides the element with id="test".
+
+syntax :
+
+    $(document).ready(function(){
+        $("").click(function(){         //write only for click
+            $("").functions();
+        });
+    });
+    
+--------------------------------------------------------------------------------------
+
+********************Examples of jQuery Selectors*********************
+Syntax	Description	Example
+1. --> $("*")	                    --> Selects all elements	
+
+2. --> $(this)	                    --> Selects the current HTML element
+
+3. --> $("p.intro")	                --> Selects all <p> elements with class="intro"	
+
+4. --> $("p:first")	                --> Selects the first <p> element	
+
+5. --> $("ul li:first")	            --> Selects the first <li> element of the first <ul>
+
+6. --> $("ul li:first-child")	    --> Selects the first <li> element of every <ul>
+
+7. --> $("[href]")	                --> Selects all elements with an href attribute	
+
+8. --> $("a[target='_blank']")	    --> Selects all <a> elements with a target attribute value equal to "_blank"	
+
+9. --> $("a[target!='_blank']")	    --> Selects all <a> elements with a target attribute value NOT equal to   "_blank"	
+
+10. --> $(":button")	            --> Selects all <button> elements and <input> elements of type="button"
+
+11. --> $("tr:even")	            --> Selects all even <tr> elements	
+
+12. --> $("tr:odd")	                --> Selects all odd <tr> elements
+
+----------------------------------------------------------------------------------------------
+
+*****************What are Events?*********************
+--> All the different visitors' actions that a web page can respond to are called events.
+
+--> An event represents the precise moment when something happens.
+
+--> Examples:
+
+1. --> moving a mouse over an element
+2. --> selecting a radio button
+3. --> clicking on an element
+
+--Mouse Events--	  --Keyboard Events--	      --Form Events--	  --Document/Window Events--
+    click	                 keypress	              submit	             load
+    dblclick	             keydown	              change	             resize
+    mouseenter	             keyup	                  focus	                 scroll
+    mouseleave                                        blur    
+
+----------------------------------------------------------------------------------------------------
+
