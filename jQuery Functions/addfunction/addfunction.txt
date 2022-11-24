@@ -1,0 +1,8 @@
+****************Add New HTML Content************************************
+
+We will look at four jQuery methods that are used to add new content:
+
+1. --> append() - Inserts content at the end of the selected elements
+2. --> prepend() - Inserts content at the beginning of the selected elements
+3. --> after() - Inserts content after the selected elements
+4. --> before() - Inserts content before the selected elements

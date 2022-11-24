@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>remove/empty function</title>
+    <link rel="icon" href="../logo.png" />
+    <style>
+      .div-1 {
+        width: 500px;
+        height: auto;
+        border: 1px solid red;
+        background-color: grey;
+        padding: 30px;
+        display: flex;
+      }
+      .div-2 {
+        width: 500px;
+        height: auto;
+        border: 1px solid red;
+        background-color: skyblue;
+        padding: 30px;
+        display: flex;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".remove1").click(function () {
+          $(".div-1 .first").empty();
+        });
+
+        $(".remove2").click(function () {
+          $(".div-2 .second").remove();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="remove1">empty div-1 first</button>
+    <br /><br />
+
+    <div class="div-1">
+      <div class="first">
+        <h1>first</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente
+        exercitationem aliquid odio eius. Culpa suscipit omnis rem incidunt nisi
+        placeat ab, impedit, architecto dignissimos expedita nihil magnam
+        molestiae labore?
+      </div>
+      <div class="second">
+        <h1>second</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente
+        exercitationem aliquid odio eius. Culpa suscipit omnis rem incidunt nisi
+        placeat ab, impedit, architecto dignissimos expedita nihil magnam
+        molestiae labore?
+      </div>
+    </div>
+    <hr />
+    <button class="remove2">remove div-2 second</button>
+    <br /><br />
+    <div class="div-2">
+      <div class="first">
+        <h1>first</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente
+        exercitationem aliquid odio eius. Culpa suscipit omnis rem incidunt nisi
+        placeat ab, impedit, architecto dignissimos expedita nihil magnam
+        molestiae labore?
+      </div>
+      <div class="second">
+        <h1>second</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sapiente
+        exercitationem aliquid odio eius. Culpa suscipit omnis rem incidunt nisi
+        placeat ab, impedit, architecto dignissimos expedita nihil magnam
+        molestiae labore?
+      </div>
+    </div>
+  </body>
+</html>

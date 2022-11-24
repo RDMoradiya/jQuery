@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>append function</title>
+    <link rel="icon" href="../logo.png" />
+    <script>
+      $(document).ready(function () {
+        $(".append").click(function () {
+          $(".content").append(" <br><b><U> Welcome to!!!!</U></b>");
+          $(".content").append(
+            " <img src='../logo.png' height='100px' width='300px'><br>"
+          );
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="append">append function</button>
+    <h1 class="content">
+      "*******Inserts content at the end of the selected elements******"
+    </h1>
+  </body>
+</html>

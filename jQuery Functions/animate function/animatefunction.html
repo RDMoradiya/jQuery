@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animate Function</title>
+    <link rel="icon" href="../logo.png" />
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".animatee").click(function () {
+          $(".box").animate({ left: "250px", top: "250px" }, "slow");
+        });
+      });
+
+      // Animate with queue
+      $(document).ready(function () {
+        $(".animatequeue").click(function () {
+          let division = $(".container");
+          division.animate({ height: "300px", opacity: "0.4" }, "slow");
+          division.animate({ width: "300px", opacity: "0.8" }, "slow");
+          division.animate({ height: "100px", opacity: "0.4" }, "slow");
+          division.animate({ width: "100px", opacity: "0.8" }, "slow");
+        });
+      });
+
+      // animate() - Using Pre-defined Values
+
+      $(document).ready(function () {
+        $(".animatevalue").click(function () {
+          $(".containervalue").animate(
+            { width: "hide", height: "toggle" },
+            "slow"
+          );
+        });
+      });
+    </script>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        background-color: orange;
+        position: absolute;
+      }
+      .container {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        background-color: green;
+        position: absolute;
+        top: 220px;
+      }
+      .containervalue {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        background-color: blue;
+        position: absolute;
+        top: 390px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="animatee">Animate Function</button>
+    <br /><br />
+    <div class="box"></div>
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <!-- animate() - Uses Queue Functionality -->
+
+    <button class="animatequeue">Animate Uses Queue Functionality</button>
+    <div class="container"></div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- animate() - Using Pre-defined Values -->
+    <button class="animatevalue">Animate Using Pre-defined Values</button>
+    <div class="containervalue"></div>
+  </body>
+</html>
