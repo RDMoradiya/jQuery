@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bxslider</title>
+    <link rel="icon" href="logo.png" />
+    <!-- jQuery  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- bxSlider (4.2.14) -->
+
+    <!-- JavaScript only -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.14/jquery.bxslider.min.js"></script>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.14/jquery.bxslider.css"
+    />
+
+    <link rel="stylesheet" href="slider(bxslider).css" />
+    <script>
+      $(function () {
+        $(".slide-container").bxSlider({
+          // mode: "fade",
+          // autometically img scroll -- ( auto : true )
+          auto: true,
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="slide-container">
+      <!-- slide-1 -->
+      <div class="slide">
+        <img src="1.jpg" alt="" />
+        <div class="caption">
+          <h3>MAKE THE RIGHT MOVE.</h3>
+          <h1 class="title-hero-19">
+            Moving Your<br />
+            Products Across All <br />Borders.
+          </h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <!-- slide-2 -->
+      <div class="slide">
+        <img src="2.jpg" alt="" />
+        <div class="caption">
+          <h3>GO SMOOTHLY WITH SAFETY.</h3>
+          <h1>We Are Here To Move <br />Your Buiness.</h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <!-- slide-3 -->
+      <div class="slide">
+        <img src="3.jpg" alt="" />
+        <div class="caption">
+          <h3>MAKE THE RIGHT MOVE.</h3>
+          <h1 class="title-hero-19">
+            Moving Your<br />
+            Products Across All <br />Borders.
+          </h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <!-- slide-4 -->
+      <div class="slide">
+        <img src="4.jpg" alt="" />
+        <div class="caption">
+          <h3>GO SMOOTHLY WITH SAFETY.</h3>
+          <h1>We Are Here To Move <br />Your Buiness.</h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
