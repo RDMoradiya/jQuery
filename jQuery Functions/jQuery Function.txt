@@ -1,0 +1,85 @@
+-----------------------------------------------------------------------------------------------
+***********************************************Functions*************************************
+--------------------------------------------------------------------------------------------------
+
+1.  --> hide(duration)
+2.  --> show(duration)
+3.  --> toggle(duration)
+---------------------------------------------------------------------------------------------------
+4.  --> fadeIn(duration)
+5.  --> fadeOut(duration)
+6.  --> fadeTo(duration, opacity)
+7.  --> fadeToggle(duration)
+--------------------------------------------------------------------------------------------------
+8.  --> slideUp(duration)
+9.  --> slideDown(duration)
+10. --> slideToggle(duration)
+------------------------------------------------------------------------------------------------------
+***** chaining function****
+
+11. --> hide(duration).show(duration)
+12. --> fadeIn(duration).fadeOut(duration)
+13. --> slideUp(duration).slideDown(duration)
+--------------------------------------------------------------------------------------------------------
+14. --> stop()
+15. --> animate({css propertis})      //ex:- .animate({left:"250px",top:"200px".height:"toggle"},"slow")
+--------------------------------------------------------------------------------------------------------
+***********css functions*******************
+
+16. --> css({css propertis})          //ex:- .css({ "font-size": "80px", margin: "30px",padding:"25px"})
+16. --> addClass(id/class name)
+16. --> removeClass(id/class name)
+16. --> toggleClass(id/class name)
+----------------------------------------------------------------------------------------------------------
+******add function********
+
+17. --> append()                 // Inserts content at the end of the selected elements      
+18. --> prepend()                //Inserts content at the beginning of the selected elements
+19. --> after()                  //Inserts content after the selected elements
+20. --> before()                 //Inserts content before the selected elements
+
+ ex:- .append(" <br><b><U> Welcome to!!!!</U></b>")
+ ex:- .prepend(" <img src='../logo.png' height='100px' width='300px'><br>")
+--------------------------------------------------------------------------------------------------------
+21. --> remove()                 
+-------------------------------------------------------------------------------------------------------
+***********Ancestors function***************
+
+22. --> parent().css({css propertis})           //ex:- .parent().css({ color: "green" });
+23. --> parents().css({css propertis})          //ex:- .parents().css({ color: "green" });
+24. --> parentsUntil().css({css propertis})    //ex:- .parentsUntil().css({ color: "green" });
+-------------------------------------------------------------------------------------------------------
+***********descendants function***************
+
+25. --> children().css({css propertis})     //ex:- .children("div").css({ color: "green" });
+26. --> find().css({css propertis})         //ex:- .find("span").css({border: "2px solid green" });
+----------------------------------------------------------------------------------------------------
+***********Siblings functions***************
+
+27. --> siblings().css({css propertis})     //ex:- .siblings().css({ color: "green" });
+28. --> next().css({css propertis})         //ex:- .next().css({ color: "green" });
+29. --> nextAll().css({css propertis})      //ex:- .nextAll().css({ color: "green" });
+30. --> nextUntil().css({css propertis})    //ex:- .nextUntil().css({ color: "green" });
+31. --> prev().css({css propertis})         //ex:- .prev().css({ color: "green" });
+32. --> prevAll().css({css propertis})      //ex:- .prevAll().css({ color: "green" });
+33. --> prevUntil().css({css propertis})    //ex:- .prevUntil().css({ color: "green" });
+--------------------------------------------------------------------------------------------------
+***********filter functions***************
+
+34. --> first().css({css propertis})                     //ex:- .first().css({ color: "green" });
+35. --> last().css({css propertis})                      //ex:- .last().css({ color: "green" });
+36. --> eq(index number).css({css propertis})            //ex:- .eq(3).css({ color: "green" });
+37. --> filter(id/class name).css({css propertis})       //ex:- .filter().css({ color: "green" });
+38. --> not(id/class name).css({css propertis})          //ex:- .not().css({ color: "green" });
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

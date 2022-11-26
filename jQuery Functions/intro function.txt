@@ -1,0 +1,118 @@
+********** hide() and show()*************
+With jQuery, you can hide and show HTML elements with the hide() and show() methods
+
+*************toggle()***********
+You can also toggle between hiding and showing an element with the toggle() method.
+
+*********fadeIn() Method********
+The jQuery fadeIn() method is used to fade in a hidden element.
+
+************fadeOut() Method***********
+The jQuery fadeOut() method is used to fade out a visible element.
+
+*********fadeToggle() Method***********
+The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.
+If the elements are faded out, fadeToggle() will fade them in.
+If the elements are faded in, fadeToggle() will fade them out.
+
+*********fadeTo() Method**********
+The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).
+
+***********slideDown() Method****************
+The jQuery slideDown() method is used to slide down an element.
+
+*******slideUp() Method*************
+The jQuery slideUp() method is used to slide up an element.
+
+*************slideToggle() Method**************
+The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.
+If the elements have been slid down, slideToggle() will slide them up.
+If the elements have been slid up, slideToggle() will slide them down.
+
+***********animate() Method************
+The jQuery animate() method is used to create custom animations.
+
+***********stop() Method***********
+The jQuery stop() method is used to stop an animation or effect before it is finished.
+The stop() method works for all jQuery effect functions, including sliding, fading and custom animations.
+
+***********Callback Functions*********
+JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors.
+To prevent this, you can create a callback function.
+A callback function is executed after the current effect is finished.
+
+*************Chaining Method ***********
+Until now we have been writing jQuery statements one at a time (one after the other).
+However, there is a technique called chaining, that allows us to run multiple jQuery commands, one after the other, on the same element(s).
+The following example chains together the css(), slideUp(), and slideDown() methods.
+
+*****************append() Method****************
+The jQuery append() method inserts content AT THE END of the selected HTML elements.
+
+*************prepend() Method************
+The jQuery prepend() method inserts content AT THE BEGINNING of the selected HTML elements.
+
+*************after() and before() Methods*************
+The jQuery after() method inserts content AFTER the selected HTML elements.
+The jQuery before() method inserts content BEFORE the selected HTML elements.
+
+****************remove()/empty() Method*************
+The jQuery remove() method removes the selected element(s) and its child elements.
+
+************css() Method***************
+Sets or returns the style attribute
+
+************addClass() Method***************
+Adds one or more classes to the selected elements
+
+************removeClass() Method***************
+Removes one or more classes from the selected elements
+
+************toggleClass() Method***************
+Toggles between adding/removing classes from the selected elements
+
+*************parent() Method************
+The parent() method returns the direct parent element of the selected element.
+
+********************parents() Method**********
+The parents() method returns all ancestor elements of the selected element, all the way up to the document's root element (<html>).
+
+*****************parentsUntil() Method**************
+The parentsUntil() method returns all ancestor elements between two given arguments.
+
+**********************children() Method********
+The children() method returns all direct children of the selected element.
+
+************find() Method**************
+The find() method returns descendant elements of the selected element, all the way down to the last descendant.
+
+*********************siblings() Method****************
+The siblings() method returns all sibling elements of the selected element.
+
+*********************next() Method**************
+The next() method returns the next sibling element of the selected element.
+
+*******************nextAll() Method************
+The nextAll() method returns all next sibling elements of the selected element.
+
+**********nextUntil() Method********
+The nextUntil() method returns all next sibling elements between two given arguments.
+
+********prev(), prevAll() & prevUntil() Methods************
+The prev(), prevAll() and prevUntil() methods work just like the methods above but with reverse functionality
+
+******first() Method*******
+The first() method returns the first element of the specified elements.
+
+*********last() Method*********
+The last() method returns the last element of the specified elements.
+
+*********eq() method*********
+The eq() method returns an element with a specific index number of the selected elements.
+
+********filter() Method*********
+The filter() method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned.
+
+*******not() Method*********
+The not() method returns all elements that do not match the criteria.
+Tip: The not() method is the opposite of filter().

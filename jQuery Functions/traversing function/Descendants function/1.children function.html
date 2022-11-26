@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>children() function</title>
+  <head>
+    <style>
+      .descendants * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        // $("div").children().css({ color: "green", border: "2px solid green" });
+        $("div")
+          .children("p.second")
+          .css({ color: "green", border: "2px solid green" });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- children() -->
+    <div class="descendants" style="width: 500px">
+      div (current element)
+      <p class="first">
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+      <p class="second">
+        p (child)
+        <span>span (grandchild)</span>
+      </p>
+    </div>
+  </body>
+</html>

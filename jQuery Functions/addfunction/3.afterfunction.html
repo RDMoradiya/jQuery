@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>after function</title>
+    <link rel="icon" href="../logo.png" />
+    <script>
+      // Inserts content at the end of the selected elements
+
+      $(document).ready(function () {
+        $(".append").click(function () {
+          $("h1").after("<b><U> Welcome!!!!</U></b><br>");
+          $("img").after("<br><b><U> RD!!!!</U></b>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="append">after function</button>
+    <h1 class="content">
+      "*******Inserts content after the selected elements******"
+    </h1>
+    <img src="../logo.png" alt="" />
+  </body>
+</html>
